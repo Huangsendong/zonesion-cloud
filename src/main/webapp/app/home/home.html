@@ -1,0 +1,107 @@
+<!--<div ng-cloak>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-8">
+            <h1 data-translate="home.title">Welcome, Zonesion!</h1>
+            <p class="lead" data-translate="home.subtitle">This is your homepage</p>
+
+            <div ng-switch="vm.isAuthenticated()">
+                <div class="alert alert-success" ng-switch-when="true" data-translate="home.logged.message" translate-values="{username: '{{vm.account.login}}'}">
+                    You are logged in as user "{{vm.account.login}}".
+                </div>
+
+                <div class="alert alert-warning" ng-switch-when="false" data-translate="global.messages.info.authenticated" translate-compile>
+                    If you want to <a class="alert-link" href="" ng-click="vm.login()">sign in</a>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user1" and password="user") <br/>- User (login="user2" and password="user").
+                </div>
+				
+                <div class="alert alert-warning" ng-switch-when="false" data-translate="global.messages.info.register" translate-compile>
+                    You don't have an account yet? <a class="alert-link" ui-sref="register">Register a new account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <section>
+ <div class="carousel">
+        <div class="swiper-container">
+            <ul>
+                <li><img src="content/img_res/01.jpg" alt="1"/></li>
+                <li><img src="content/img_res/02.png" alt="2"/></li>
+                <li><img src="content/img_res/03.png" alt="3"/></li>
+                <li><img src="content/img_res/04.jpg" alt="4"/></li>
+             </ul>
+             <ol>
+                 <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+             </ol>    
+        </div>
+    </div>
+</section> 
+<!--
+<div class="carouse">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"  data-interval="2000" >
+      <ol class="carousel-indicators" id="indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="content/img_res/01.jpg" alt="1"/>
+            </div>
+            <div class="item">
+              <img src="content/img_res/02.png" alt="2"/>
+            </div>
+            <div class="item">
+              <img src="content/img_res/03.png" alt="3"/>
+            </div>
+            <div class="item">
+              <img src="content/img_res/04.jpg" alt="4"/>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>-->
+
+<div class="course">
+    <div class="course-filter section-header">
+        <p class="course-bar">推荐课程</p>
+        <div class="course-sort">
+            <a href="#" class="newest">最新</a>
+            <a href="#" >最热</a>
+            <a href="#" class="hottest">推荐</a>
+        </div>
+    </div>
+
+    <div class="row neirong">
+      <div class="col-sm-8 col-md-12 col-xs-6">
+        <div class="thumbnail wenben" ng-repeat="coursebar in course">
+          <a href="#" class="course_img"  ui-sref="activate"><img ng-src="{{coursebar.url}}" alt=""/></a>
+          <div class="caption">
+            <h4><a href="#"  ui-sref="activate">{{coursebar.text}}</a></h4>
+            <p>
+                <span>
+                    <i class="es-icon iconfont">&#xe600;</i>
+                    0
+                </span>
+                <span class="teacher-name ">
+                    <i class="iconfont">&#xe738;</i>
+                    0
+                </span>
+                <a href="#" class="Gratiss">免费</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mvl">
+        <a href="#" class="btn-gylight">
+            更多
+        </a>
+    </div>
+</div>
+
